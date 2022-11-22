@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  padding: 5px 0 5px 0;
+  margin: 0;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  box-shadow: 0 10px 10px gainsboro;
+}
+
+.primary-nav {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  column-gap: 150px;
+}
+
+.logo-tag {
+  display: flex;
+  justify-content: center;
+}
+
+.primary-nav li {
+  padding: 10px;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.menu-link {
+  color: black;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+footer {
+  border: solid 1px gainsboro;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  padding: 100px;
+}
+
+.card {
+  max-width: 200px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, 0.3);
+}
+
+.card-image {
+  max-width: 100%;
+}
+
+.series-title {
+  margin: 5px;
+  text-align: center;
+}
+
+.heart {
+  text-align: center;
+}
+
+.likes {
+  font-size: 13px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.comments-button {
+  background-color: gainsboro;
+  box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, 0.3);
+  width: 100px;
+  border: 0;
+  padding: 10px;
+}
