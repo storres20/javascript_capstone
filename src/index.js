@@ -1,5 +1,6 @@
 import './style.css';
 import './imgs/bg1.png';
+import comments from './modules/comments/comments.js';
 
 const displaySeries = async (number) => {
   await fetch('https://api.tvmaze.com/shows')
@@ -13,11 +14,15 @@ const displaySeries = async (number) => {
             <div class="heart">❤️</div>
             <div class="likes">5 likes</div>
             <div class="button-container">
-                <button name=${data[i].id} class="comments-button">Comments</button>
+                <button type="button" name=${data[i].id} class="btn btn-secondary btnComment" data-bs-toggle="modal" data-bs-target="#exampleModal${data[i].id}">Comments</button>
             </div>
-        </div>`;
+        </div>
+        `;
       }
     });
 };
 
 displaySeries(15);
+
+// Add comments
+comments(15);
