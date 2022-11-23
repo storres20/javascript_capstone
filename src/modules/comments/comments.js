@@ -20,24 +20,23 @@ const comments = async (number) => {
               </div>
               <div class="modal-body">
                 <img src="${data[i].image.medium}" alt="Sample photo" class="card-image" />
-                <h5 class="modal-title" id="exampleModalLabel">${data[i].name}</h5>
+                <h4 class="modal-title mb-2" id="exampleModalLabel">${data[i].name}</h4>
                 
-                <p>Runtime: ${data[i].runtime} min</p>
-                <p>Schedule: ${data[i].schedule.time} h</p>
-                <p>Rating: ${data[i].rating.average}</p>
-                <p>Country: ${data[i].network.country.name}</p>
+                <div class="modal-info">
+                  <p>Runtime: ${data[i].runtime} min</p>
+                  <p>Schedule: ${data[i].schedule.time} h</p>
+                  <p>Rating: ${data[i].rating.average}</p>
+                  <p>Country: ${data[i].network.country.name}</p>
+                </div>
                 
-                <h5>Add a comment</h5>
-                <form>
+                <div id="comment${data[i].id}" class="mb-4"></div>
+                
+                <form class="formFlex mb-4">
                   <input type="text" id="fname${data[i].id}" name="${data[i].id}" placeholder="Your name" autocomplete="off" required>
                   <textarea id="ta${data[i].id}" name="ta${data[i].id}" rows="4" cols="50" placeholder="Your insights" required></textarea>
                   <button type="button" class="btn btn-primary btnAddComment">Comment</button>
                 </form>
                 
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
               </div>
             </div>
           </div>
@@ -50,13 +49,16 @@ const comments = async (number) => {
     // Comment's URL
     const url = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/1PzqD6Qshuxs8IJlxxL7/comments';
 
+    // Clicking on COMMENTS BUTTON from main page
     if (e.target.classList.contains('btnComment')) {
       // ID object
       const id = e.target.name;
-      console.log(id);
+      // console.log(id);
+      // Show Comments when just show modal
       showComment(id, url);
     }
 
+    // Clicking on COMMENT BUTTON from modal page
     if (e.target.classList.contains('btnAddComment')) {
       if (e.target.parentElement[0].value !== '' && e.target.parentElement[1].value) {
         // Your name
@@ -69,7 +71,7 @@ const comments = async (number) => {
         const newComment = new NewComment(username, comment, id);
 
         // Add comment in API
-        addComment(newComment, url);
+        addComment(newComment, url, id);
 
         // Clear inputs
         e.target.parentElement[0].value = '';
