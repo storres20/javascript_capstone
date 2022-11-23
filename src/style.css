@@ -94,3 +94,22 @@ footer {
   border: 0;
   padding: 10px;
 }
+
+/* Modal comment */
+.modal-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal-info {
+  display: grid;
+  grid-template-columns: auto auto;
+  row-gap: 0;
+  column-gap: 20px;
+}
+
+.formFlex {
+  display: flex;
+  flex-direction: column;
+}
