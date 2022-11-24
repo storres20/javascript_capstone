@@ -2,7 +2,6 @@
 import NewComment from './newComment.js';
 import addComment from './addComment.js';
 import showComment from './showComment.js';
-
 const url = 'https://api.tvmaze.com/shows';
 
 const comments = async (number) => {
@@ -47,7 +46,8 @@ const comments = async (number) => {
 
   cardsContainer.addEventListener('click', (e) => {
     // Comment's URL
-    const url = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/1PzqD6Qshuxs8IJlxxL7/comments';
+    const url =
+      'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/1PzqD6Qshuxs8IJlxxL7/comments';
 
     // Clicking on COMMENTS BUTTON from main page
     if (e.target.classList.contains('btnComment')) {
@@ -60,7 +60,10 @@ const comments = async (number) => {
 
     // Clicking on COMMENT BUTTON from modal page
     if (e.target.classList.contains('btnAddComment')) {
-      if (e.target.parentElement[0].value !== '' && e.target.parentElement[1].value) {
+      if (
+        e.target.parentElement[0].value !== '' &&
+        e.target.parentElement[1].value
+      ) {
         // Your name
         const username = e.target.parentElement[0].value;
         // Your insights
