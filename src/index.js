@@ -1,5 +1,5 @@
 import './style.css';
-import './imgs/bg1.png';
+import './imgs/tv-stars-logo.png';
 import { fetchLikes, postLike } from './modules/likes.js';
 import comments from './modules/comments/comments.js';
 import itemsCounter from './modules/itemsCounter.js';
