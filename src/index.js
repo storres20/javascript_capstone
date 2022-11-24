@@ -20,8 +20,9 @@ const displaySeries = async (number) => {
             </div>
         </div>
         `;
+        // itemsCounter(cardsContainer);
       }
-      itemsCounter(data);
+      // itemsCounter(data);
     });
 };
 
@@ -42,7 +43,11 @@ const setLikes = async () => {
 };
 
 const setUpPage = async () => {
+  console.log('getcards')
   await displaySeries(15);
+  const cards = document.querySelectorAll('.card');
+  console.log(cards);
+  itemsCounter(cards);
   hearts = document.querySelectorAll('.heart');
   hearts.forEach((heart) => {
     heart.addEventListener('click', (e) => {
@@ -62,3 +67,17 @@ const setUpPage = async () => {
 comments(15);
 
 setUpPage();
+
+
+// const child = container.querySelectorAll('.card');
+
+// itemsCounter()
+// itemsCounter(child);
+
+// const getCards = () => {
+//   console.log('getcards')
+//   const containers = document.querySelectorAll('.cards-container');
+//   return containers;
+// }
+
+export { setUpPage } ;
