@@ -1,8 +1,8 @@
-const itemsCounter = (series) => {
-  const seriesNumber = series.length;
-  // console.log(seriesNumber);
+const itemsCounter = (cards) => {
+  const seriesNumber = cards.length;
   const seriesMenu = document.querySelector('.series-menu');
-  seriesMenu.textContent = `Series (${seriesNumber})`;
+  seriesMenu.innerHTML = `Series (${seriesNumber})`;
+  return seriesNumber;
 };
 
 export default itemsCounter;

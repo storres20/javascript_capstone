@@ -20,8 +20,9 @@ const displaySeries = async (number) => {
             </div>
         </div>
         `;
+        // itemsCounter(cardsContainer);
       }
-      itemsCounter(data);
+      // itemsCounter(data);
     });
 };
 
@@ -43,6 +44,8 @@ const setLikes = async () => {
 
 const setUpPage = async () => {
   await displaySeries(15);
+  const cards = document.querySelectorAll('.card');
+  itemsCounter(cards);
   hearts = document.querySelectorAll('.heart');
   hearts.forEach((heart) => {
     heart.addEventListener('click', (e) => {
