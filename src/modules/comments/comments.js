@@ -29,6 +29,7 @@ const comments = async (number) => {
                   <p>Country: ${data[i].network.country.name}</p>
                 </div>
                 
+                <div id="titleComment${data[i].id}" class="mb-2">Title Comments</div>
                 <div id="comment${data[i].id}" class="mb-4"></div>
                 
                 <form class="formFlex mb-4">
