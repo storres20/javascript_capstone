@@ -1,27 +1,5 @@
 <a name="readme-top"></a>
 
-<!--
-HOW TO USE:
-This is an example of how you may give instructions on setting up your project locally.
-
-Modify this file to match your project and remove sections that don't apply.
-
-REQUIRED SECTIONS:
-- Table of Contents
-- About the Project
-  - Built With
-  - Live Demo
-- Getting Started
-- Authors
-- Future Features
-- Contributing
-- Show your support
-- Acknowledgements
-- License
-
-After you're finished please remove all the comments and instructions!
--->
-
 <div align="center">
 
   <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
@@ -30,8 +8,6 @@ After you're finished please remove all the comments and instructions!
   <h3><b>JavaScript capstone project: Your API-based webapp</b></h3>
 
 </div>
-
-<!-- TABLE OF CONTENTS -->
 
 # 📗 Table of Contents
 
@@ -55,8 +31,6 @@ After you're finished please remove all the comments and instructions!
 - [❓ FAQ](#faq)
 - [📝 License](#license)
 
-<!-- PROJECT DESCRIPTION -->
-
 # 📖 [javascript_capstone] <a name="about-project"></a>
 
 **[JavaScript_Capstone]** is about building our own web application based on an external API. We selected an API that provides data about a topic that we like and then we will build the web app around it. The web app will have 2 user interfaces.
@@ -75,33 +49,21 @@ After you're finished please remove all the comments and instructions!
   </ul>
 </details>
 
-<!-- Features -->
-
 ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
-
-- **[key_feature_1]**
-- **[key_feature_2]**
-- **[key_feature_3]**
+- **[Connected to APIs]**
+- **[Added a likes button]**
+- **[Added a comments button]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- LIVE DEMO -->
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> Add a link to your deployed project.
-
-- [Live Demo Link](https://yourdeployedapplicationlink.com)
+- [Live Demo Link](https://storres20.github.io/javascript_capstone/dist)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- GETTING STARTED -->
-
 ## 💻 Getting Started <a name="getting-started"></a>
-
-> Describe how a new developer could make use of your project.
 
 To get a local copy up and running, follow these steps.
 
@@ -112,13 +74,6 @@ In order to run this project you need:
 ```sh
   npm install
 ```
-<!--
-Example command:
-
-```sh
- gem install rails
-```
- -->
 
 ### Setup
 
@@ -129,15 +84,6 @@ Clone this repository to your desired folder:
   git clone https://github.com/storres20/javascript_capstone.git
 ```
 
-<!--
-Example commands:
-
-```sh
-  cd my-folder
-  git clone git@github.com:myaccount/my-project.git
-```
---->
-
 ### Install
 
 Install this project with:
@@ -145,14 +91,6 @@ Install this project with:
 ```sh
   npm install
 ```
-<!--
-Example command:
-
-```sh
-  cd my-project
-  gem install
-```
---->
 
 ### Usage
 
@@ -161,13 +99,6 @@ To run the project, execute the following command:
 ```sh
   npm start
 ```
-<!--
-Example command:
-
-```sh
-  rails server
-```
---->
 
 ### Run tests
 
@@ -177,29 +108,7 @@ To run tests, run the following command:
   npm run test
 ```
 
-<!--
-Example command:
-
-```sh
-  bin/rails test test/models/article_test.rb
-```
---->
-
-### Deployment
-
-You can deploy this project using:
-
-<!--
-Example:
-
-```sh
-
-```
- -->
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- AUTHORS -->
 
 ## 👥 Authors <a name="authors"></a>
 
@@ -209,27 +118,21 @@ Example:
 - Twitter: [@paulinagzzc](https://twitter.com/paulinagzzc)
 - LinkedIn: [Paulina Gonzalez Cantu](https://www.linkedin.com/in/paulina-gonzalez-cantu/)
 
-👤 **Italo**
+👤 **Italo Lon Kan**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@storres20](https://github.com/storres20)
+- Twitter: [@italolonkan](https://twitter.com/italolonkan)
+- LinkedIn: [Italo Lon Kan](https://www.linkedin.com/in/italo-lon-kan/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> Describe 1 - 3 features you will add to the project.
-
-- [ ] **[new_feature_1]**
-- [ ] **[new_feature_2]**
-- [ ] **[new_feature_3]**
+- [ ] **[Transitions and animations]**
+- [ ] **[Additional home pages]**
+- [ ] **[Decent mobile design]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- CONTRIBUTING -->
 
 ## 🤝 Contributing <a name="contributing"></a>
 
@@ -239,15 +142,12 @@ Feel free to check the [issues page](https://github.com/storres20/javascript_cap
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- SUPPORT -->
 
 ## ⭐️ Show your support <a name="support"></a>
 
-If you like this project please give it a star 😁
+If you like this project please give it a star 🌟 😁
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- ACKNOWLEDGEMENTS -->
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
@@ -255,24 +155,6 @@ If you like this project please give it a star 😁
 * [The involvement API](https://www.notion.so/Involvement-API-869e60b5ad104603aa6db59e08150270)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- FAQ (optional) -->
-
-## ❓ FAQ <a name="faq"></a>
-
-> Add at least 2 questions new developers would ask when they decide to use your project.
-
-- **[Question_1]**
-
-  - [Answer_1]
-
-- **[Question_2]**
-
-  - [Answer_2]
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- LICENSE -->
 
 ## 📝 License <a name="license"></a>
 
