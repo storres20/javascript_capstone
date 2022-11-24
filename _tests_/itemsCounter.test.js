@@ -1,9 +1,8 @@
 /* @jest-environment jsdom */
-import itemsCounter from '../src/modules/itemsCounter.js'
+import itemsCounter from '../src/modules/itemsCounter.js';
 
 describe('counter', () => {
   test('Series Counter equals 2', () => {
-
     document.body.innerHTML = `
     <div class="card-container">
       <div class="card">
@@ -28,8 +27,7 @@ describe('counter', () => {
       <div>
     </div>
     `;
-    
-  const cards = document.querySelectorAll('.card');
+    const cards = document.querySelectorAll('.card');
     const count = itemsCounter(cards);
     expect(count).toBe(2);
   });
@@ -37,20 +35,17 @@ describe('counter', () => {
 
 describe('counter', () => {
   test('counter1', () => {
-
     document.body.innerHTML = `
     <div class="card-container">
       <div class="series-menu">
       <div>
     </div>
     `;
-    
-  const cards = document.querySelectorAll('.card');
+    const cards = document.querySelectorAll('.card');
     const count = itemsCounter(cards);
     expect(count).toBe(0);
   });
 });
-
 
 describe('Series Counter equals 0', () => {
   beforeAll(() => {
@@ -79,12 +74,10 @@ describe('Series Counter equals 0', () => {
     </div>
     `;
     const cards = document.querySelectorAll('.card');
-    const count = itemsCounter(cards);
+    itemsCounter(cards);
   });
-  
   test('Menu Count Updates Correctly', () => {
     const seriesMenu = document.querySelector('.series-menu');
-    console.log(seriesMenu);
-    expect(seriesMenu.innerHTML).toMatch(`Series (2)`);
+    expect(seriesMenu.innerHTML).toMatch('Series (2)');
   });
-})
+});
