@@ -56,7 +56,7 @@ const setUpPage = async () => {
   setLikes();
 };
 
-setUpPage();
+// setUpPage();
 
 // Add comments
 comments(15);
