@@ -60,7 +60,9 @@ const comments = async (number) => {
 
     // Clicking on COMMENT BUTTON from modal page
     if (e.target.classList.contains('btnAddComment')) {
-      if (e.target.parentElement[0].value !== '' && e.target.parentElement[1].value) {
+      if (
+        e.target.parentElement[0].value !== '' && e.target.parentElement[1].value
+      ) {
         // Your name
         const username = e.target.parentElement[0].value;
         // Your insights
