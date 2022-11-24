@@ -30,10 +30,11 @@ let hearts = [];
 const setLikes = async () => {
   const likeDiv = document.querySelectorAll('.likes');
   const likes = await fetchLikes();
-  for (let i = 0; i < likeDiv.length; i++) {
-    const id = likeDiv[i].id;
-    for (let j = 0; j < likes.length; j++) {
-      if (likes[j].item_id == id) {
+  for (let i = 0; i < likeDiv.length; i += 1) {
+    // const id = likeDiv[i].id;
+    const { id } = likeDiv[i];
+    for (let j = 0; j < likes.length; j += 1) {
+      if (likes[j].item_id === id) {
         likeDiv[i].innerText = `${likes[j].likes} likes`;
       }
     }
