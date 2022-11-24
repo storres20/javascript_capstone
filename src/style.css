@@ -1,5 +1,7 @@
 body {
   margin: 0;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  background-color: #000;
 }
 
 nav {
@@ -10,7 +12,7 @@ nav {
   width: 100%;
   height: auto;
   align-items: center;
-  box-shadow: 0 10px 10px gainsboro;
+  background-color: #121212;
 }
 
 .primary-nav {
@@ -26,6 +28,10 @@ nav {
   justify-content: center;
 }
 
+.logo {
+  width: 160px;
+}
+
 .primary-nav li {
   padding: 10px;
   font-weight: 400;
@@ -33,18 +39,24 @@ nav {
 }
 
 .menu-link {
-  color: black;
+  color: white;
   text-decoration: none;
   font-size: 17px;
 }
 
+.primary-nav li:hover {
+  background-color: #252525;
+  border-radius: 5px;
+}
+
 footer {
-  border: solid 1px gainsboro;
   height: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: auto;
+  background-color: #121212;
+  color: gainsboro;
 }
 
 .cards-container {
@@ -58,27 +70,38 @@ footer {
 .card {
   max-width: 200px;
   margin: 10px;
-  border: 1px solid #ccc;
   box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, 0.3);
+  background-color: #1a1a1a;
+  border-radius: 5px;
 }
 
 .card-image {
   max-width: 100%;
+  height: 290px;
 }
 
 .series-title {
-  margin: 5px;
+  margin: 15px 5px 5px 5px;
+  color: white;
   text-align: center;
 }
 
 .heart {
   text-align: center;
+  color: #f4c518;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.heart:hover {
+  color: #65a0f0;
 }
 
 .likes {
   font-size: 13px;
   margin-bottom: 10px;
   text-align: center;
+  color: white;
 }
 
 .button-container {
