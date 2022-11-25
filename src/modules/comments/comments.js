@@ -54,7 +54,6 @@ const comments = async (number) => {
     if (e.target.classList.contains('btnComment')) {
       // ID object
       const id = e.target.name;
-      // console.log(id);
       // Show Comments when just show modal
       showComment(id, url);
     }

@@ -15,6 +15,22 @@ nav {
   background-color: #121212;
 }
 
+h1 {
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  margin-top: 40px;
+}
+
+.line {
+  color: yellow;
+  width: 100px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  height: 10px;
+}
+
 .primary-nav {
   list-style: none;
   display: flex;
@@ -64,7 +80,7 @@ footer {
   flex-wrap: wrap;
   gap: 30px;
   justify-content: center;
-  padding: 100px;
+  padding: 60px 100px 100px 100px;
 }
 
 .card {
@@ -135,4 +151,8 @@ footer {
 .formFlex {
   display: flex;
   flex-direction: column;
+}
+
+a {
+  color: #f4c518;
 }
