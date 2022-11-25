@@ -11,7 +11,7 @@ const displaySeries = async (number) => {
       for (let i = 0; i < number; i += 1) {
         const cardsContainer = document.querySelector('.cards-container');
         cardsContainer.innerHTML += `<div class="card">
-            <img src="${data[i].image.medium}" alt="Sample photo" class="card-image" />
+            <img src="${data[i].image.original}" alt="Sample photo" class="card-image" />
             <div class="series-title">${data[i].name}</div>
             <div class="heart" id="like-${data[i].id}">♥</div>
             <div class="likes" id=${data[i].id}>0 likes</div>
@@ -20,9 +20,7 @@ const displaySeries = async (number) => {
             </div>
         </div>
         `;
-        // itemsCounter(cardsContainer);
       }
-      // itemsCounter(data);
     });
 };
 
@@ -32,7 +30,6 @@ const setLikes = async () => {
   const likeDiv = document.querySelectorAll('.likes');
   const likes = await fetchLikes();
   for (let i = 0; i < likeDiv.length; i += 1) {
-    // const id = likeDiv[i].id;
     const { id } = likeDiv[i];
     for (let j = 0; j < likes.length; j += 1) {
       if (likes[j].item_id === id) {
@@ -59,9 +56,6 @@ const setUpPage = async () => {
   setLikes();
 };
 
-// setUpPage();
-
-// Add comments
 comments(15);
 
 setUpPage();
