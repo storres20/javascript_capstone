@@ -1,5 +1,5 @@
 /* @jest-environment jsdom */
-import itemsCounter from '../modules/itemsCounter.js';
+import itemsCounter from '../src/modules/itemsCounter.js';
 
 describe('counter', () => {
   test('Series Counter equals 2', () => {
