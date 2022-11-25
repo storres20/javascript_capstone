@@ -24,6 +24,8 @@
   - [Run tests](#run-tests)
   - [Deployment](#triangular_flag_on_post-deployment)
 - [👥 Authors](#authors)
+- [Kanban Board](#kanban-board)
+- [Top Pull Requests](#pull-requests)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
@@ -31,9 +33,10 @@
 - [❓ FAQ](#faq)
 - [📝 License](#license)
 
-# 📖 [javascript_capstone] <a name="about-project"></a>
+# 📖 [Javascript Capstone] <a name="about-project"></a>
 
-**[JavaScript_Capstone]** is about building our own web application based on an external API. We selected an API that provides data about a topic that we like and then we will build the web app around it. The web app will have 2 user interfaces.
+**[JavaScript Capstone]** is about building our own web application based on an external API. We selected an API that provides data about a topic that we like and then we will build the web app around it. The web app will have 2 user interfaces.
+We chose the TV Maze API, this API gave us access to top tv shows.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -123,6 +126,19 @@ To run tests, run the following command:
 - GitHub: [@storres20](https://github.com/storres20)
 - Twitter: [@italolonkan](https://twitter.com/italolonkan)
 - LinkedIn: [Italo Lon Kan](https://www.linkedin.com/in/italo-lon-kan/)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## Link to our Kanban Board <a name="kanban-board"></a>
+
+- [Kanban Board](https://github.com/storres20/javascript_capstone/projects/1)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## Link to our Top Pull Requests <a name="pull-requests"></a>
+
+- [Main Page Items](https://github.com/storres20/javascript_capstone/pull/22)
+- [Adding Comments](https://github.com/storres20/javascript_capstone/pull/24)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
